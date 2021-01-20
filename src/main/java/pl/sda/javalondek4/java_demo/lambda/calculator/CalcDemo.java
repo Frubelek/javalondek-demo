@@ -1,5 +1,7 @@
 package pl.sda.javalondek4.java_demo.lambda.calculator;
 
+import pl.sda.javalondek4.java_demo.lambda.playable.Playable;
+
 public class CalcDemo {
 
     public static void main(String[] args) {
@@ -37,7 +39,6 @@ public class CalcDemo {
         myAdder.addWithComment(5, 20, "should be 25");
 
         Operation<Double> divisionOperation = (a, b) -> a / b;
-
 
     }
 }
