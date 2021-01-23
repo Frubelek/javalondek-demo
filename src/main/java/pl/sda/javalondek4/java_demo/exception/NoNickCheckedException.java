@@ -1,23 +1,23 @@
 package pl.sda.javalondek4.java_demo.exception;
 
-public class NoNickException extends Exception{
+public class NoNickCheckedException extends Exception{
 
-    public NoNickException() {
+    public NoNickCheckedException() {
     }
 
-    public NoNickException(String message) {
+    public NoNickCheckedException(String message) {
         super(message);
     }
 
-    public NoNickException(String message, Throwable cause) {
+    public NoNickCheckedException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public NoNickException(Throwable cause) {
+    public NoNickCheckedException(Throwable cause) {
         super(cause);
     }
 
-    public NoNickException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public NoNickCheckedException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }

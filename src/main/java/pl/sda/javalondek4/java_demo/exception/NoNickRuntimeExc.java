@@ -1,22 +1,22 @@
 package pl.sda.javalondek4.java_demo.exception;
 
-public class NoNickRuntimeException extends RuntimeException {
-    public NoNickRuntimeException() {
+public class NoNickRuntimeExc extends RuntimeException {
+    public NoNickRuntimeExc() {
     }
 
-    public NoNickRuntimeException(String message) {
+    public NoNickRuntimeExc(String message) {
         super(message);
     }
 
-    public NoNickRuntimeException(String message, Throwable cause) {
+    public NoNickRuntimeExc(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public NoNickRuntimeException(Throwable cause) {
+    public NoNickRuntimeExc(Throwable cause) {
         super(cause);
     }
 
-    public NoNickRuntimeException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public NoNickRuntimeExc(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }
