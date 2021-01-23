@@ -7,11 +7,10 @@ Git - good practices
 * zmergowany branch można usunąć
 
 
-
 Git - przydatne komendy
 git status
 git add .
 git commit - m "[tag] - message"
 git remote
 git restore --staged file-name // zdejmij ze stage'a
-
+git checkout branch-name // przełącz się na branch-name
