@@ -24,7 +24,7 @@ public class ExceptionExample {
 
         System.out.println("Now with runtime exceptions...");
         try {
-            myNick= exceptionGenerator.nickWithRuntimeException();
+            myNick = exceptionGenerator.nickWithRuntimeException();
         }catch (NoNickRuntimeException e){
             System.out.println("wyjatek z RuntimeException");
             myNick = "Przypisanie z runtimeExcepion";
@@ -34,6 +34,24 @@ public class ExceptionExample {
 //        String nullString = null;
 //        nullString.concat(" ma kota");
 
-        System.out.println("here?");    // ta linijka się nie wydrukuje
+        System.out.println("With dealer :)");
+        NickDealer nickDealer = new NickDealer(new ExceptionGenerator());
+
+        String myNickDealer;
+        try {
+            myNickDealer = nickDealer.nickFromDealer();
+        } catch (NoNickException e) {
+            myNickDealer = "default nick name";
+        }
+        System.out.println("Nick from myDealer");
+
+        try {
+            myNickDealer = nickDealer.nick();
+        } catch (NoNickRuntimeException exc) {
+            myNickDealer = "unexpected value ...";
+        }
+        System.out.println("Nick from dealer: " + myNickDealer);
+
+        System.out.println("here?");
     }
 }
