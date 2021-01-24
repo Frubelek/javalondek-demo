@@ -23,4 +23,5 @@ git remote
 git restore --staged file-name // zdejmij ze stage'a
 git checkout branch-name // przełącz się na branch-name
 git checkout -b branch-name // przełącz na nowo utworzony branch
+git log --graph // rysuje graf historii w konsoli
 
