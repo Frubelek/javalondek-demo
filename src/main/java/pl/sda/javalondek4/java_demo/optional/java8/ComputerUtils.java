@@ -1,7 +1,8 @@
 package pl.sda.javalondek4.java_demo.optional.java8;
-public class ComputerUtils {
-    private ComputerUtils() {
 
+public class ComputerUtils {
+
+    private ComputerUtils() {
         throw new UnsupportedOperationException("This class shouldn't be instantiated!!!");
     }
 
