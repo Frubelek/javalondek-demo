@@ -2,6 +2,9 @@ package pl.sda.javalondek4.java_demo.optional.homework;
 
 @FunctionalInterface
 public interface TextDisplaying<T> {
+//    static TextDisplaying displayInHome() {
+//    }
+
     void display(T t);
 
     TextDisplaying<Integer> displayInHome = (HomeNumber) ->

@@ -13,11 +13,16 @@ Git - good practices
     * develop - branch developerski
     * feature branch - branch do rozwoju funkcjonalności
     * future branch - powinien startowac od developa i do niego finalnie zostać zmergowany
+* branch
+    * własny branch nie musi być idealny (moze nie działać, może zawierać komentarze FIXME/TODO),
+      ale wysłanie merge requesta z tego brancha musi zawierać "piękny kod"
 
 
 Git - przydatne komendy
 git status
 git add .
+git add . file-name
+git add . file-name file-name2
 git commit - m "[tag] - message"
 git remote
 git restore --staged file-name // zdejmij ze stage'a

@@ -21,6 +21,10 @@ public class Display {
                 '}';
     }
 
+    public static String getDisplayedText(Home home) {
+        return null;
+    }
+
     public static void main(String[] args) {
 
         TextDisplaying<Integer> displayInHome2 = (HomeNumber) ->
@@ -29,11 +33,17 @@ public class Display {
         Home nullHome = null;
         Home withoutInductionHob = new Home(new Kitchen(null));
         Home withBrokenDisplay = new Home(new Kitchen(new InductionHob(null)));
-        Home displayInFirstHome = new Home(new Kitchen(new InductionHob(new Display(TextDisplaying.displayInHome))));
-        Home displayInFirstHome()
+        Home displayInFirstHome = new Home(new Kitchen(new InductionHob
+                (new Display(TextDisplaying.displayInHome))));
+
+        getDisplayedText(nullHome);
+        getDisplayedText(withoutInductionHob);
+        getDisplayedText(withBrokenDisplay);
+        getDisplayedText(displayInFirstHome);
 
 
         TextDisplaying.displayInHome.display(55);
+
 
 
 
